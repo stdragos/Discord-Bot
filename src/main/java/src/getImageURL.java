@@ -12,7 +12,7 @@ public class getImageURL{
 
         query = query.trim().replaceAll(" +", " ");
         query = query.replaceAll(" ", "+");
-        String URL = "https://pixabay.com/api/?key=15445879-73aeef906e52e4f5a15f6e971&q=" + query + "&image_type=photo&per_page=200&page=" + page;
+        String URL = "https://pixabay.com/api/?key=APIKEY&q=" + query + "&image_type=photo&per_page=200&page=" + page;
         ArrayList<ArrayList<String>> result = new ArrayList<>();
         System.out.println(URL);
         String jsonString;
