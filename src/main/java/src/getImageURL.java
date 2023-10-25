@@ -32,7 +32,7 @@ public class getImageURL{
             --page;
             if(page==0)
                 return result;
-            URL = "https://pixabay.com/api/?key=15445879-73aeef906e52e4f5a15f6e971&q=" + query + "&image_type=photo&per_page=200&page=" + page;
+            URL = "https://pixabay.com/api/?key=APIKEY&q=" + query + "&image_type=photo&per_page=200&page=" + page;
             jsonString = GetRequestAPI.getReq(URL);
 
             obj = new JSONObject(jsonString);
